@@ -84,13 +84,17 @@
     description = "Bo Hansen";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
-      firefox
     #  thunderbird
     ];
   };
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+
+            
+           
+
+
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
@@ -100,10 +104,12 @@
 	brave
 	git
 	vim
-	freerdp
+	vscode-with-extensions
+		
 
 
   ];
+
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
